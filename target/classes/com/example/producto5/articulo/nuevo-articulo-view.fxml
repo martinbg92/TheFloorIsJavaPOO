@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.articulo.AddArticuloController">
+    <top>
+        <Label graphicTextGap="40.0" lineSpacing="5.0" prefHeight="54.0" prefWidth="182.0" text="Añadir Articulo" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+    </top>
+    <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label  alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Codigo" />
+            <Label fx:id="messageCodigo" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <TextField fx:id="codigo1" />
+            <Label  alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Discripcion" />
+            <Label fx:id="messageDisc" textFill="RED" />
+            <TextField fx:id="discripcion" />
+            <Label  alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Precio" />
+            <Label fx:id="messagePrice" textFill="RED" />
+            <TextField fx:id="precio" />
+            <Label  alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Tiempo de preparacion" />
+            <Label fx:id="messageTiempo" textFill="RED" />
+            <TextField fx:id="tiempo_de_preparacion" />
+            <Label  alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Gastos de envio" />
+            <Label fx:id="messageEnvio" textFill="RED" />
+            <TextField fx:id="dastos_de_envio" />
+            <Label  textFill="RED" />
+            <Button fx:id="guardar" mnemonicParsing="false" onAction="#guardarArticulo" text="Guardar" />
+            <Label fx:id="messageExito" textFill="#1cb223" />
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+        <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="60.0" text="Atras" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" top="50.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+
+</BorderPane>

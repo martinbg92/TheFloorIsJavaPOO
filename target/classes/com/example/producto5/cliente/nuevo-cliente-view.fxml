@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.cliente.AddClienteController">
+   <bottom>
+      <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="60.0" text="Atras" BorderPane.alignment="CENTER" >
+         <BorderPane.margin>
+            <Insets bottom="50.0" top="50.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+   <top>
+      <Label graphicTextGap="40.0" lineSpacing="5.0" prefHeight="54.0" prefWidth="182.0" text="Añadir Cliente" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="messageNombre1" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Nombre" />
+            <Label fx:id="messageNombre" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <TextField fx:id="nombre" />
+            <Label fx:id="messageCodigo11" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Domicilio" />
+            <Label fx:id="messageDomiciolio" textFill="RED" />
+            <TextField fx:id="domicilio" />
+            <Label fx:id="messageCodigo12" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="NIF" />
+            <Label fx:id="messageNif" textFill="RED" />
+            <TextField fx:id="nif" />
+            <Label fx:id="messageCodigo13" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Email" />
+            <Label fx:id="messageEmail" textFill="RED" />
+            <TextField fx:id="email" />
+            <Label fx:id="messageCodigo14" alignment="CENTER_RIGHT" textAlignment="RIGHT" textFill="RED" />
+            <Label text="Telefono" />
+            <Label fx:id="messageTelefono" textFill="RED" />
+            <TextField fx:id="telefono" />
+            <Label fx:id="messageEnvio1" textFill="RED" />
+            <Label text="Elige el tipo de cliente" />
+            <CheckBox fx:id="is_premium" mnemonicParsing="false" text="Marca el checkbox para un cliente premium" />
+            <Label fx:id="messageExito" textFill="#1cb223" />
+            <Button fx:id="guardar" mnemonicParsing="false" onAction="#guardarCliente" text="Guardar" />
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainControler">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Gestionar Articulos">
+            <items>
+                  <MenuItem fx:id="addArticulo" mnemonicParsing="false" onAction="#changeSceneNuevoArticulo" text="Añadir Articulo" />
+                <MenuItem fx:id="mostrarArticulos" mnemonicParsing="false" onAction="#changeSceneMostrarArticulos" text="Mostrar Articulos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Gestionar Clientes">
+            <items>
+              <MenuItem fx:id="addCliente"  mnemonicParsing="false" onAction="#changeSceneNuevoCliente"  text="Añadir Cliente" />
+                  <MenuItem fx:id="mostratTodosLosClientes" mnemonicParsing="false"  onAction="#changeSceneMostrarTodosLosClientes" text="Mostrar Todos los Clientes" />
+                  <MenuItem fx:id="mostratClientesEstandar" mnemonicParsing="false" onAction="#changeSceneMostrarClientesEstandar" text="Mostrar Clientes Estandar" />
+                  <MenuItem fx:id="mostratClientesPremium" mnemonicParsing="false" onAction="#changeSceneMostrarClientesPremium" text="Mostrar Clientes Premium" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Gestionar Pedidos">
+            <items>
+              <MenuItem fx:id="addPedido" mnemonicParsing="false" onAction="#changeSceneAddPedido" text="Añadir Pedido" />
+                  <MenuItem fx:id="borrarPedido" mnemonicParsing="false" onAction="#changeSceneBorrarPedido" text="Eliminar Pedido" />
+                  <MenuItem fx:id="mostratPedidosEnviados" mnemonicParsing="false" onAction="#changeSceneMostrarPedidosEnviados" text="Mostrar Pedidos Enviados" />
+                  <MenuItem fx:id="mostratPedidosPendientesDeEnvio" mnemonicParsing="false" onAction="#changeSceneMostrarPedidosPendientesDeEnvio" text="Mostrar Pedidos Pendientes de Envio" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
